@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرجعك لشرح القطع الإلكترونية والمتحكمات</title>
+    
+    <style>
+        /* 1. التنسيقات العامة للحاوية والخطوط */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a; /* خلفية داكنة حديثة */
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        /* 2. قسم الهيدر (Header) بتصميم عصري ومتدرج */
+        header {
+            background: linear-gradient(135deg, #1e1b4b, #312e81, #4338ca);
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #6366f1;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: #c7d2fe;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 3. حاوية المحتوى الرئيسي */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #38bdf8;
+            position: relative;
+        }
+
+        /* 4. شبكة البطاقات الإبداعية (Cards Grid) */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* تأثير إبداعي عند التمرير بالماوس فوق البطاقة */
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+            box-shadow: 0 15px 35px rgba(56, 189, 248, 0.2);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            font-size: 1.4rem;
+            margin-top: 0;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 10px;
+        }
+
+        .card p strong {
+            color: #f1f5f9;
+        }
+
+        .card ul {
+            padding-right: 20px;
+            color: #94a3b8;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        /* 5. تذييل الصفحة (Footer) */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0b0f19;
+            color: #64748b;
+            margin-top: 80px;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- قسم العنوان الرئيسي -->
+    <header>
+        <h1>اكتشف عالم الإلكترونيات بطريقة مبسطة وشرح بسيط</h1>
+        <p>دليلك الشامل لفهم ومحتوى القطع الإلكترونية الأساسية، كيفية توصيلها، وتطبيقاتها العملية باستخدام المتحكمات مثل الأردوينو.</p>
+    </header>
+
+    <!-- المحتوى الرئيسي للموقع -->
+    <div class="container">
+        <h2 class="section-title">⚡ دليل القطع الإلكترونية الأساسية</h2>
+
+        <div class="grid">
+            <!-- البطاقة الأولى -->
+            <div class="card">
+                <h3>1. المقاومة الكهربائية (Resistor)</h3>
+                <p><strong>ما هي؟</strong> عنصر إلكتروني سلبي يتحكم في تدفق التيار الكهربائي ويقلل من شدته في الدائرة.</p>
+                <p><strong>الوظيفة الأساسية:</strong> حماية العناصر الحساسة مثل الليد (LED) من الاحترار أو التلف بسبب التيار الزائد.</p>
+                <ul>
+                    <li>النوع الشائع: المقاومات الكربونية الثابتة.</li>
+                    <li>طريقة القراءة: عبر جدول الألوان.</li>
+                </ul>
+            </div>
+
+            <!-- البطاقة الثانية -->
+            <div class="card">
+                <h3>2. حساس المسافة (Ultrasonic - HC-SR04)</h3>
+                <p><strong>ما هو؟</strong> حساس ذكي يرسل موجات فوق صوتية لتحديد بُعد الأجسام والمسافات بدقة عالية.</p>
+                <p><strong>الوظيفة الأساسية:</strong> قياس الزمن بين إرسال الموجة واستقبالها لحساب المسافة.</p>
+                <ul>
+                    <li>الأطراف: VCC, Trig, Echo, GND.</li>
+                    <li>التطبيقات: الروبوتات وتحديد العوائق.</li>
+                </ul>
+            </div>
+
+            <!-- البطاقة الثالثة -->
+            <div class="card">
+                <h3>3. الصمام الثنائي (LED)</h3>
+                <p><strong>ما هو؟</strong> عنصر شبه موصل يبعث الضوء عند مرور التيار الكهربائي فيه باتجاه واحد.</p>
+                <p><strong>الوظيفة الأساسية:</strong> إعطاء إشارات ضوئية أو تنبيهات بصريّة في المشاريع.</p>
+                <ul>
+                    <li>القطبية: الطرف الطويل (موجب) والطرف القصير (سالب).</li>
+                    <li>تنبيه: يلزم دائماً توصيل مقاومة معه لحمايته.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- التذييل -->
+    <footer>
+        <p>k-xb.19 المهندس خالد جمعة</p>
+        <!-- أضف هذا الكود في index.html للانتقال للصفحة الثانية -->
+<div style="text-align: center; margin-top: 40px;">
+    <a href="arduino.html" style="background-color: #2dd4bf; color: #0f172a; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">
+        الانتقال إلى قسم الأردوينو والمتحكمات ⚡
+    </a>
+</div>
+    </footer>
+
+</body>
+</html>
